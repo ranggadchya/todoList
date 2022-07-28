@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List | Rangga Dwi Cahya</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- Link CSS Custom -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body class="loaded">
+    <!-- Main Container -->
+    <div class="container">
+      <main>
+        <article class="app-box">
+          <!-- Header -->
+          <header class="header">
+            <div>
+              <h1 class="h1 header-title">My Day</h1>
+
+              <p class="header-time" data-header-time>Thursday, 28 July</p>
+            </div>
+
+            <div class="dropdown-wrapper">
+              <button class="menu-btn" aria-label="Toggle menu" data-menu-toggler><ion-icon name="ellipsis-horizontal" aria-hidde="true"></ion-icon></button>
+
+              <!-- Dropdown Menu -->
+              <div class="dropdown-container" data-menu>
+                <ul class="dropdown-list">
+                  <li class="dropdown-item">
+                    <p class="item-title">Theme</p>
+
+                    <div class="theme-btn-group">
+                      <button class="theme-btn active" style="--hue: 227" data-theme-btn data-hue="227"></button>
+
+                      <button class="theme-btn" style="--hue: 298" data-theme-btn data-hue="298"></button>
+
+                      <button class="theme-btn" style="--hue: 344" data-theme-btn data-hue="344"></button>
+
+                      <button class="theme-btn" style="--hue: 2" data-theme-btn data-hue="2"></button>
+
+                      <button class="theme-btn" style="--hue: 153" data-theme-btn data-hue="153"></button>
+
+                      <button class="theme-btn" style="--hue: 177" data-theme-btn data-hue="177"></button>
+
+                      <button class="theme-btn" style="--hue: 206" data-theme-btn data-hue="206"></button>
+                    </div>
+                  </li>
+
+                  <li>
+                    <button class="dropdown-link" data-modal-toggler data-menu-toggler>
+                      <ion-icon name="information-circle-outline"></ion-icon>
+                      <span class="span">App Info</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </header>
+
+          <!-- Main -->
+          <div class="title-wrapper" data-welcome-note>
+            <img src="./assets/images/calender-image.svg" width="130" height="115" class="img" alt="calender image" />
+
+            <h2 class="h2">
+              Wondering Where<br />
+              Your tasks are?
+            </h2>
+          </div>
+
+          <ul class="task-list" data-task-list></ul>
+
+          <div class="input-wrapper" title="Add a task in 'My Day'">
+            <input type="text" name="task" aria-label="Add task" maxlength="100" placeholder="Try typing 'Jogging 20 Min at Morning'" class="input-field" data-task-input />
+
+            <span class="input-text">Add a task</span>
+
+            <div class="input-icon">
+              <ion-icon name="add-outline" class="add-icon" aria-hidden="true"></ion-icon>
+
+              <ion-icon name="ellipse-outline" class="circle-icon" aria-hidden="true"></ion-icon>
+            </div>
+          </div>
+        </article>
+
+        <!-- App Info Modal -->
+        <div class="app-info" data-info-modal>
+          <div class="modal">
+            <h2 class="modal-title">App Info</h2>
+
+            <ul class="modal-list">
+              <li class="modal-item">
+                <strong class="strong">Version : </strong>
+
+                <span class="span">1.0.0</span>
+              </li>
+
+              <li class="modal-item">
+                <strong class="strong">Publish : </strong>
+
+                <span class="span">06 July 2022</span>
+              </li>
+
+              <li class="modal-item">
+                <strong class="strong">Last Updated : </strong>
+
+                <span class="span">28 July 2022</span>
+              </li>
+
+              <li class="modal-item">
+                <strong class="strong">Modify By : </strong>
+
+                <a href="https://twitter.com/_drangga" class="span">Rangga Dwi Cahya</a>
+              </li>
+
+              <li class="modal-item">
+                <strong class="strong">Copyright : </strong>
+
+                <a href="https://twitter.com/codewithsadee" class="span">codewithsadee</a>
+              </li>
+            </ul>
+
+            <button class="modal-btn" data-modal-toggler>Ok</button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Link JS Custom -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- IonIcon Link -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
